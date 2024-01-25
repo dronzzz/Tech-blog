@@ -1,0 +1,16 @@
+<%- include("partials/logedheader") -%>
+
+<h1>Pre-Published blogs</h1>
+
+<% for(var i =0 ; i < info.length ; i++){ %>
+  <div class="flexbox-Conatiner">
+    <li>
+<a class="nav-link" href="/posts/<%=info[i].title  %>"><h1> <%= info[i].title %> </h1></a>
+<p >Author: <span style="color: rgba(60,255,208,.9);"><%= user.firstName %>   <%= user.lastName %></span></p>
+<hr style="white">
+</li>
+</div>
+<% }  %>
+</ul>
+
+<%- include("partials/blankfooter") -%>

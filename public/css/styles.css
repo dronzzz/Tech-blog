@@ -1,0 +1,144 @@
+body{
+
+  background-color:rgb(19 19 19);
+/* background-color:black; */
+  padding:2% 5% 5% 15%;
+color: white;
+}
+.title-image{
+  width: 95%;
+
+/* length:365px;
+width:547px; */
+}
+
+.navbar{
+  margin-bottom: 50px;
+}
+
+#navbarTogglerDemo01{
+  border-bottom-width: 1px;
+}
+.pd{
+  font-size: 19px;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.newsLetter{
+  position:relative;
+    background-color: rgba(82,0,255,.9);
+    height: 350px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-right: 10%;
+}
+.form{
+  padding-top: 4%;
+}
+
+/*******************tecg kbsdfp**/
+.strtPage{
+  height:800px;
+  background-color: red;
+}
+
+.page2{
+  height:800px;
+  /* background-color: blue; */
+  margin: 200px 0;
+}
+
+.tab{
+  height: 100vh;
+  width: 16%;
+  background-color: rgba(82,0,255,.9);
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.manya{
+  height: 100vh;
+  width: 84%;
+opacity: 60%;
+  display: block;
+  position: absolute;
+  top:0;
+  left:16%;
+  background-color: #1B1C1B;
+}
+
+.flexbox-Conatiner{
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+flex-direction: column;
+margin-top: 50px;
+}
+.flexbox-item{
+  width: 90%;
+  height: 70px;
+font-size: 30px;
+  color: white;
+position: relative;
+right: 10px;
+
+}
+
+li {
+    display: list-item;
+    list-style-type: none;
+}
+
+.py-12:hover{
+  color: rgba(60,255,208,.9);
+  border-color: rgba(60,255,208,.9);
+}
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 22px;
+    color:white;
+    border-bottom: 1.5px solid;
+    --tw-border-opacity: 1;
+    border-color: rgb(61 0 191/var(--tw-border-opacity));
+
+}
+
+
+
+
+.miniImg{
+  width:100%;
+  height: 75%;
+  position: relative;
+  margin-top: 10%;
+  border-radius: 0.125rem;
+  vertical-align: middle;
+}
+
+.shape{
+  border-radius: 5%;
+  width:40%;
+  height: 720px;
+
+}
+.clr{
+   background-color: rgba(82,0,255,.9);
+}
+.feature{
+  font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    letter-spacing: .01em;
+    line-height: 1.1;
+}
+
+
+.txt:hover{
+  text-decoration: underline  rgba(60,255,208,.9) 1.5px;
+
+
+}

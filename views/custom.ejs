@@ -1,0 +1,12 @@
+<%-   include("partials/header") -%>
+
+<% for(var i=0;i<data.length;i++){  %>
+<%  if(inputTitle === data[i].title){   %>
+  <h1> <%= data[i].title  %></h1>
+    <p><%= data[i].content %></p>
+<%   }  %>
+<% }  %>
+<h1></h1>
+
+
+<%- include("partials/footer") -%>

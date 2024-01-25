@@ -1,0 +1,118 @@
+<%- include("partials/logedheader") -%>
+
+
+
+<% for(var i = 0; i<1; i++){  %>
+  <div class=" row">
+  
+  <%  for (var j = 0; j <1; j++) {  %>
+  <div class=" col-lg-7">
+  
+  <h1  style="font-size: 45px; font-weight: 900; letter-spacing: 0.01em; text-shadow: 7px 7px rgba(82,0,255,.9);" ><%=data[i].item[j].title %></h1>
+  <img style="width:95%;" src="<%= data[i].item[j].imageUrl %>" alt="">
+  <p style="color: rgba(60,255,208,.9);" ><%=fname[j]%>  <%=lname[j]%></p>
+  
+  </div>
+    <%  }  %>
+    <div class="  col-lg-3">
+    <%  for (var j = 1; j < 4; j++) {  %>
+  
+  <div class="">
+    <h4><%=data[i].item[j].title %></h4>
+    <p style="color: rgba(60,255,208,.9);" ><%=fname[j]%>  <%=lname[j]%></p>
+    <hr class="color:white;">
+  
+  
+  </div>
+  
+  
+    <%  }  %>
+  </div>
+  </div>
+    <%  }  %>
+  
+  <% for(var i = 0; i<data.length; i++){  %>
+  <div class="row page2" id="<%=data[i]._id %>">
+  
+    <div class="col-lg-5">
+  
+  
+      <%  for (var j = 3; j < data[i].item.length; j++) {  %>
+      <!-- here I have to start loop from 5-->
+  
+      <div class=" row">
+        <div class="col-lg-9">
+          <a class="nav-link" href="/posts/<%=data[i].item[j].title %>"> <h3 class="txt" ><%=data[i].item[j].title %> </h3> </a>
+          <p style="color: rgba(60,255,208,.9);" ><%=fname[j]%>  <%=lname[j]%></p>
+  
+  
+  
+        </div>
+        <div class="col-lg-3">
+          <img class="miniImg" src="<%=data[i].item[j].imageUrl %>" alt="">
+  
+        </div>
+      </div>
+      <hr class="color:white;">
+      <%  }  %>
+  
+  
+    </div>
+  
+  
+  
+  
+  
+  <div class="col-lg-1">
+  
+  </div>
+  
+  
+    <!-- <div class="shape"> //for shape of side mostpopular -->
+    <%  var clr = data[i]._id %>
+      <div class="col-lg-6 shape " style=" background-color: <%=boxColor[i] %> ;" >
+  
+        <h2 style="font-size:22px; margin:20px 15px" ><%=data[i]._id %></h2>
+        <ol>
+        <%  for (var z = 0;  z< 3; z++) {  %>
+  
+  
+          <div class="col-lg-9">
+  <li>
+    <a class="nav-link" href="/posts/<%=data[i].item[z].title %>"><h3  class="feature" ><%=data[i].item[z].title %> </h3></a>
+  
+    <h7 style="color: rgba(60,255,208,.9);" > <%=fname[z]%>  <%=lname[z]%>    </h7>
+    <hr class="color:white;">
+  
+  </li>
+            </div>
+  
+  <%  }  %>
+  
+            </ol>
+  
+  
+  
+  <div class="col-lg-1">
+  
+  </div>
+  
+        <!-- <div class="col-lg-3"> -->
+  
+  
+          <!-- ///////////////////Empty div -->
+        <!-- </div> -->
+  
+      </div>
+  
+  
+    <!-- </div> -->
+  
+  
+  </div>
+  
+  <%  }  %>
+
+
+
+<%- include("partials/footer") -%>

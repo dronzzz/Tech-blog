@@ -1,0 +1,138 @@
+<%- include("partials/header") -%>
+
+<style media="screen">
+  body{
+  background-color: #1B1C1B;
+
+  padding:2% 5% 2% 12%;
+color: white;
+}
+#navbr{
+  padding: 0 0 1%;
+}
+/* p{
+  color:white;
+  text-align: left;
+  line-height: 1.1;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-block-start: 1em;
+margin-block-end: 1em;
+letter-spacing: 1px;
+ font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+
+} */
+p{
+  color:white;
+  text-align: left;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 18px;
+  margin-block-start: 1em;
+margin-block-end: 1em;
+letter-spacing: -.01em;
+ font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+
+}
+
+
+.titleImg1{
+  width :85%;
+  vertical-align: middle;
+}
+
+    /* background-color: rgba(255,61,0,.9); */
+
+    /* #0096FF */
+    /* #00FFD1 */
+
+.mustPopular{
+      background-color:#00FFD1;
+      border-radius: 5%;
+display: block;
+        height: 570px;
+        color: black;
+position: sticky;
+    }
+.txt:hover{
+  color: white;
+}
+     /* #fixed{
+      position: fixed;
+    margin-left: 56%;
+    margin-bottom:47%;
+    } */
+    .hd{
+      color: white;
+      text-align: center;
+    }
+/* #fixed{
+  display:block;
+  position:relative;
+} */
+.container{
+  display: block;
+}
+
+
+.stk{
+  top: 25px;
+  position: sticky;
+  bottom: 0;
+}
+.spacetaker{
+  height:20%;
+}
+
+
+.barsearch{
+  background-color: inherit;
+  display: inline-block;
+  margin-left: 90%;
+  margin-top: 370px;
+text-align: center;
+position: sticky;
+top: 300px;
+
+}
+.rotate{
+  transform: rotate(-0.25turn);
+
+}
+.mini-rec{
+  background-color:rgba(82,0,255,.9);
+}
+</style>
+
+<br><br>
+<div class="row">
+<div class="col-lg-8 post-style">
+
+
+
+  <h1  style="size:30px; text-shadow:6px 6px rgba(82,0,255,.9);"> <strong><%=data.title %></strong></h1>
+  
+  <img style="width:700px; height:500px; margin:20px 2px"   src="<%=data.imageUrl%>" alt="">
+
+  
+  <p><%=data.content %></p>
+</div>
+<div class="col-lg-4" style="color:red;">
+  <div class="col-lg-9 mini-rec" >
+    <p><%=data.category %></p>
+    <p><%=allData.title %></p>
+
+
+
+  </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+<%- include("partials/blankfooter") -%>

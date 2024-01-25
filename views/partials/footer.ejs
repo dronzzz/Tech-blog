@@ -1,0 +1,65 @@
+<section id="Newsletter">
+  <div class="newsLetter">
+    <h1 class="form">Subscribe for Latest Updates.</h1>
+    <br>
+    <div class="mb-3  details">
+
+      <form name="submit-to-google-sheet">
+        <input style="background-color:white; color:black; width:85%;height:33px ; border-radius:3%; border:none;"type="email" name="Email" value=""  placeholder="xyz@gmail.com" required>
+
+        </div>
+        <!-- <button type="submit" ><img src="" alt="">  </button> -->
+        <button type="submit" class="btn btn-danger">Subscribe</button>
+      </form>
+      <!-- <span>Thank You For Subscribing!</span> -->
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzDVCNqE4N4AhmVq04nNYFS-8SBpZlgToieooA5Wp39k2NTxEIm1SJnaS9aDNTPCZSL/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+
+
+
+  $(".invisic").hide();
+
+
+$("#menu").click(function() {
+    $(".invisic").show();
+})
+$(".manya").click(function(){
+    $(".invisic").hide();
+})
+  // $("#menu").click(function(){
+  //   $("#title").toggle();
+  // });
+  //
+  // $("#manya").click(function(){
+  //   $("#tab").hide();                                       //cancle menu
+  //   $("#manya").hide();
+  //   $("#title").toggle();
+  //
+  //
+  //   $('html, body').css({
+  //   overflow: 'auto',                //start scroll
+  //   height: 'auto'
+  // });
+  // });
+
+
+</script>
+
+
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
